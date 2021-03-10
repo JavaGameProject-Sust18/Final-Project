@@ -28,7 +28,7 @@ public  class ProblemState extends State {
             @Override
             public void onClick() {
                try{
-                DataInputStream input =new DataInputStream(new FileInputStream("E:\\Game-01\\res\\images\\input.txt"));
+                DataInputStream input =new DataInputStream(new FileInputStream("res/images/input.txt"));
                 int x=input.readInt();
                 input.close();
                 State.setState(new GameHold(handler));

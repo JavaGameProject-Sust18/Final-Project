@@ -150,7 +150,7 @@ public class Assets {
         coin=Coin.crop(0,0,521,512);
         Spritesheet D=new Spritesheet(ImageLoader.loadImage("/texture/door.png"));
         dimension=D.crop(0,0,64,64);
-        font28=FontLoader.loadFont("E:\\Game-01\\res\\fonts\\slkscr.ttf",28);
+        font28=FontLoader.loadFont("res/fonts/slkscr.ttf",28);
         inventoryScreen=ImageLoader.loadImage("/texture/inventoryScreen.png");
         Spritesheet a=new Spritesheet(ImageLoader.loadImage("/texture/wood-1.png"));
         TWood=a.crop(0,0,52,74);

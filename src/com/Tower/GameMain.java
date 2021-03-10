@@ -17,7 +17,7 @@ public class GameMain {
 
 	public static void music(){
 		try {
-			audioInputStream = AudioSystem.getAudioInputStream(new File("E:\\Game-01\\res\\sounds\\sio.wav").getAbsoluteFile());
+			audioInputStream = AudioSystem.getAudioInputStream(new File("res/sounds/sio.wav").getAbsoluteFile());
 	        clip = AudioSystem.getClip();
 	        clip.open(audioInputStream);
 		    clip.start();
@@ -32,7 +32,7 @@ public class GameMain {
 	
 	public static void buttonmusic(){
 		try {
-			AudioInputStream input = AudioSystem.getAudioInputStream(new File("E:\\Game-01\\res\\sounds\\button17.wav").getAbsoluteFile());
+			AudioInputStream input = AudioSystem.getAudioInputStream(new File("res/sounds/button17.wav").getAbsoluteFile());
 	        Clip c = AudioSystem.getClip();
 	        c.open(input);
 		    c.start();
@@ -45,7 +45,7 @@ public class GameMain {
 	
 	public static void buttonsuccess(){
 		try {
-			AudioInputStream input = AudioSystem.getAudioInputStream(new File("E:\\Game-01\\res\\sounds\\success.wav").getAbsoluteFile());
+			AudioInputStream input = AudioSystem.getAudioInputStream(new File("res/sounds/success.wav").getAbsoluteFile());
 	        Clip c = AudioSystem.getClip();
 	        c.open(input);
 		    c.start();
@@ -58,7 +58,7 @@ public class GameMain {
 	
 	public static void buttonfail(){
 		try {
-			AudioInputStream input = AudioSystem.getAudioInputStream(new File("E:\\Game-01\\res\\sounds\\fail.wav").getAbsoluteFile());
+			AudioInputStream input = AudioSystem.getAudioInputStream(new File("res/sounds/fail.wav").getAbsoluteFile());
 	        Clip c = AudioSystem.getClip();
 	        c.open(input);
 		    c.start();

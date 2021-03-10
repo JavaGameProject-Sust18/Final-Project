@@ -67,14 +67,14 @@ public class GameState_1 extends State {
 
     public void MessageFrame(){
         button.setBounds(0,0,100,50);
-        button.setIcon(new ImageIcon("E:\\Game-01\\res\\texture\\ok.png"));
+        button.setIcon(new ImageIcon("res/texture/ok.png"));
         JPanel panel =new JPanel();
         panel.setLayout(null);
         panel.setBounds(200,430,100, 50);
         panel.add(button);
         messageframe.setSize(500, 500);
         messageframe.add(panel);
-        messageframe.add(new JLabel(new ImageIcon("E:\\Game-01\\res\\texture\\spm.png")));
+        messageframe.add(new JLabel(new ImageIcon("res/texture/spm.png")));
         messageframe.dispose();
         messageframe.setUndecorated(true);
         messageframe.setBackground(new Color(0,0,0,0));

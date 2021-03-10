@@ -33,7 +33,7 @@ public class Tower extends JPanel implements MouseListener, MouseMotionListener 
 	JLabel bestMove,move,noOfPeg;
 	JLabel bestMovetxt,moveTxt,noOfPegTxt;
 
-	JButton exit = new JButton(new ImageIcon("E:\\Game-01\\res\\images\\exitgame.jpg"));
+	JButton exit = new JButton(new ImageIcon("res/images/exitgame.jpg"));
 
 	JLabel levno=new JLabel();
 	JPanel Separator1= new JPanel();
@@ -153,7 +153,7 @@ public class Tower extends JPanel implements MouseListener, MouseMotionListener 
 	
 	public static void music(){
 		try {
-			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("E:\\Game-01\\res\\sounds\\move.wav").getAbsoluteFile());
+			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("res/sounds/move.wav").getAbsoluteFile());
 	        Clip clip = AudioSystem.getClip();
 	        clip.open(audioInputStream);
 		    clip.start();
