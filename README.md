@@ -17,7 +17,7 @@ Maze Game
 --> Press Key_M to view map
 ![](Screenshot%20(132).png)
 --> Press Key_E to view Inventory
-![](res/Screenshot%20(131).png)
+![](Screenshot%20(131).png)
 
 # Third State
 ![](Screenshot%20(125).png)
