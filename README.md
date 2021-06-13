@@ -1,5 +1,8 @@
 # Final-Project
-Maze Game
+![](Intro.gif)
+
+Maze Game where a player will face problem in every state and they have to find a way of solving the problem and win.
+
 
 ![](Screenshot%20(113).png)
 ![](Screenshot%20(114).png)
