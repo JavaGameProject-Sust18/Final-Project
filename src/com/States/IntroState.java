@@ -29,6 +29,7 @@ public class IntroState extends State {
     public IntroState(Handler handler) {
         super(handler);
         intro = new ImageIcon(this.getClass().getResource("/texture/Intro.gif")).getImage();
+
     }
 
 
@@ -51,9 +52,9 @@ public class IntroState extends State {
 
     @Override
     public void render(Graphics g) {
-        g.setColor(Color.white);
+        g.setColor(Color.black);
         g.fillRect(0, 0, 900, 700);
-        g.drawImage(intro, 0, 0, 900, 700, null);
+        g.drawImage(intro, 100, 150, 700, 400, null);
         g.setColor(new Color(0, 0, 0, alpha));
         g.fillRect(0, 0, 900, 700);
     }

@@ -42,12 +42,17 @@ public class Dimension extends StaticEntity{
             }
         }
         else if(i==2 && j==1){
-            State.setState(new KnapsackState(handler));
-            i++;
-            j+=1;
-            handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone1);
-            handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone);
-            handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone2);
+            if (handler.getWorld().getEntityManager().getPlayer().getInventory().getLength() < 3) {
+                JOptionPane.showMessageDialog(null,"Please find Diamond Stone");
+            }
+            else {
+                State.setState(new KnapsackState(handler));
+                i++;
+                j += 1;
+                handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone1);
+                handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone);
+                handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone2);
+            }
         }
         else if(i==3 && j==2){
             if(handler.getWorld().getItemManager().getP()==57 && handler.getWorld().getItemManager().getW()==16){
@@ -56,6 +61,7 @@ public class Dimension extends StaticEntity{
                 handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone2);
                 handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone3);
                 JOptionPane.showMessageDialog(null,"Winner");
+                State.setState(new MenuState(handler));
 
             }
             else if(handler.getWorld().getItemManager().getW()>16){

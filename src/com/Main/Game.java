@@ -12,7 +12,7 @@ import java.awt.*;
 import java.awt.image.BufferStrategy;
 
 public class Game implements Runnable{
-    private Display display;
+    public Display display;
     public int W,H;
     private Thread thread;
     private BufferStrategy bs;
@@ -46,8 +46,7 @@ public class Game implements Runnable{
         menustate=new MenuState(handler);
         problemstate=new ProblemState(handler);
 
-//        State.setState(new IntroState(handler));
-        State.setState(gamestate);
+        State.setState(new IntroState(handler));
     }
     private void tick(){
         keyManeger.tick();

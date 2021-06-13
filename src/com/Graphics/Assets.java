@@ -13,8 +13,10 @@ public class Assets {
     public static BufferedImage[] player_down,player_up,player_left,player_right,police_down,police_up,police_left,police_right;
     public static BufferedImage[] button,button1,loadImage,exit,Maze,HTP;
     public static BufferedImage coin,coin_1,value1,value2,value3,value4,value5,value6,coin_2,coin_3,c1,c2,c3,c4,c5,c6,c7;
-    public static BufferedImage inventoryScreen,stair1,stair2,black,dart,upstair,guard,bag,road,Intro,findPath;
+    public static BufferedImage inventoryScreen,stair1,stair2,black,dart,upstair,guard,bag,road,Intro,findPath,map;
     public static void init(){
+        Spritesheet mp=new Spritesheet(ImageLoader.loadImage("/texture/map.jpg"));
+        map=mp.crop(0,0,496,501);
         Spritesheet intro=new Spritesheet(ImageLoader.loadImage("/texture/Intro.gif"));
         Intro=intro.crop(0,0,500,250);
         Spritesheet fp=new Spritesheet(ImageLoader.loadImage("/texture/bfsm.png"));
@@ -23,13 +25,14 @@ public class Assets {
         Spritesheet m2=new Spritesheet(ImageLoader.loadImage("/texture/maze1.png"));
         Spritesheet m3=new Spritesheet(ImageLoader.loadImage("/texture/maze2.png"));
         Spritesheet m4=new Spritesheet(ImageLoader.loadImage("/texture/maze3.png"));
-        Maze=new BufferedImage[5];
+        Spritesheet m5=new Spritesheet(ImageLoader.loadImage("/texture/mz1.jpg"));
+        Maze=new BufferedImage[6];
         Maze[0]=m1.crop(0,0,300,168);
         Maze[1]=m1.crop(0,0,300,168);
         Maze[2]=m2.crop(0,0,508,285);
         Maze[3]=m3.crop(0,0,300,168);
         Maze[4]=m4.crop(0,0,299,168);
-
+        Maze[5]=m5.crop(0,0,2026,1500);
 
         Spritesheet Ri=new Spritesheet(ImageLoader.loadImage("/texture/river.png"));
         river=Ri.crop(0,0,160,73);

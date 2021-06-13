@@ -1,5 +1,6 @@
 package com.States;
 
+import com.Display.Display;
 import com.Entities.Creature.Player;
 import com.Entities.Static.Dimension;
 import com.Entities.Static.Rock;

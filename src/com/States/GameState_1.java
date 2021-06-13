@@ -17,11 +17,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class GameState_1 extends State {
-    public int i=0;
+    public int i=0,j=0;
+    private boolean active=false;
     public static JFrame messageframe=new JFrame();
+    public static JFrame mapframe=new JFrame();
     public JButton button=new JButton("OK");
+    public JButton MapBtn=new JButton("Back");
     private Player player;
     private Dimension dimension;
     private World world;
@@ -30,6 +34,7 @@ public class GameState_1 extends State {
         super(handler);
         world=new World(handler,"res/world/world-2.txt");
         handler.setWorld(world);
+
         player=handler.getWorld().getEntityManager().getPlayer() ;
         player.setX(150);
         player.setY(100);
@@ -52,6 +57,13 @@ public class GameState_1 extends State {
     @Override
     public void tick() {
         world.tick();
+        if(handler.getKeyManeger().justPressed[KeyEvent.VK_M])
+            active = !active;
+        if(active&& j==0){
+            MapView();
+            mapframe.setVisible(true);
+            j++;
+        }
         if(i==0) {
             MessageFrame();
             messageframe.setVisible(true);
@@ -63,6 +75,30 @@ public class GameState_1 extends State {
     @Override
     public void render(Graphics g) {
         world.render(g);
+    }
+
+    public void MapView(){
+        MapBtn.setBounds(0,0,100,50);
+        ImageIcon icon=new ImageIcon("res/texture/back.png");
+        Image img = icon.getImage() ;
+        Image newimg = img.getScaledInstance( 100, 50,  java.awt.Image.SCALE_SMOOTH ) ;
+        MapBtn.setIcon(new ImageIcon( newimg ));
+        MapBtn.setBackground(new Color(0,0,0, 0));
+        MapBtn.setBorderPainted(false);
+        JPanel panel =new JPanel();
+        panel.setLayout(null);
+        panel.setBounds(320,580,100, 50);
+        panel.add(MapBtn);
+        mapframe.setSize(700, 640);
+        mapframe.add(panel);
+        mapframe.add(new JLabel("View Map"));
+        mapframe.add(new JLabel(new ImageIcon("res/texture/map.jpg")));
+        mapframe.dispose();
+        mapframe.setUndecorated(true);
+        mapframe.setBackground(new Color(0,0,0, (float) 0.7));
+        mapframe.getRootPane().setWindowDecorationStyle(JRootPane.NONE);
+        mapframe.setResizable(false);
+        mapframe.setLocationRelativeTo(null);
     }
 
     public void MessageFrame(){
@@ -87,6 +123,12 @@ public class GameState_1 extends State {
             @Override
             public void actionPerformed(ActionEvent e) {
                 messageframe.setVisible(false);
+            }
+        });
+        MapBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mapframe.setVisible(false);
             }
         });
     }

@@ -24,7 +24,7 @@ public  class ProblemState extends State {
         super(handler);
         uimanager=new UiManager(handler);
         handler.getMouseManager().setUiManager(uimanager);
-        uimanager.addObject(new UiImageButton(520, 180, 200, 45, Assets.button, new ClickListener() {
+        uimanager.addObject(new UiImageButton(520, 270, 200, 45, Assets.button, new ClickListener() {
             @Override
             public void onClick() {
                try{
@@ -50,8 +50,8 @@ public  class ProblemState extends State {
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.grass,0,0,900,600,null);
-        g.drawImage(Assets.tower,invX,invY,invWidth,invHeight,null);
+        g.drawImage(Assets.Maze[5],0,0,900,700,null);
+        g.drawImage(Assets.tower,100, 150, 700, 400,null);
         uimanager.render(g);
     }
 

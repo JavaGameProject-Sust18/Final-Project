@@ -67,7 +67,7 @@ public class MenuState extends State{
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(animation.getFirstFrame(),0,0,900,700,null);
+        g.drawImage(Assets.Maze[5],0,0,900,700,null);
         if(hovering)
             g.drawImage(Assets.button[1],380,280,120,45,null);
         else

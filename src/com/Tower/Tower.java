@@ -419,15 +419,6 @@ public class Tower extends JPanel implements MouseListener, MouseMotionListener 
 				Dimension.i=0;
 			}
 		}
-		
-		if(Integer.parseInt(levno.getText())>=10){
-			JOptionPane.showMessageDialog(this,"Congratulation !! You Complete all the level!!! ","Tower of Hanoi", JOptionPane.INFORMATION_MESSAGE);
-			//GameHold.sevisiblex();
-			init(1);
-			moveCount=0;
-			String str = Integer.toString(moveCount);
-			moveTxt.setText(str);
-			
-		}
+
     }
 }
