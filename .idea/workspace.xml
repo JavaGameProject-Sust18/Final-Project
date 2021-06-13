@@ -6,40 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14e6f441-9cc2-46ef-9c60-4281b3409606" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/texture/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/texture/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/texture/mz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/texture/mz1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/META-INF/Game-01.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/Entities/Static/Dimension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/Entities/Static/Dimension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/Graphics/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/Graphics/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/Main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/Main/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/GameState_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/IntroState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/IntroState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/KnapsackState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/KnapsackState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/MenuState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/ProblemState$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/ProblemState$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/States/ProblemState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/States/ProblemState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/Tower/GameMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/Tower/GameMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game-01/com/Tower/Tower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game-01/com/Tower/Tower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/world/world-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/res/world/world-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Entities/Static/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Entities/Static/Dimension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Graphics/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Graphics/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/States/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/States/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/States/GameState_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/States/GameState_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/States/IntroState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/States/IntroState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/States/MenuState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/States/MenuState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/States/ProblemState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/States/ProblemState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Tower/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Tower/Tower.java" afterDir="false" />
-    </list>
+    <list default="true" id="14e6f441-9cc2-46ef-9c60-4281b3409606" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
