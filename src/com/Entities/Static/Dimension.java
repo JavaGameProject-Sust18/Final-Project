@@ -38,6 +38,8 @@ public class Dimension extends StaticEntity{
                 handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone);
             } else {
                 JOptionPane.showMessageDialog(null,"You have failed");
+                i=0;
+                j=0;
                 State.setState(new MenuState(handler));
             }
         }

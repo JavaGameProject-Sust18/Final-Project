@@ -35,7 +35,7 @@ public class MenuState extends State{
         animation.tick();
         if(handler.getMouseManager().getP1()==null || handler.getMouseManager().getP()==null) return;
         if(r.contains(handler.getMouseManager().getP1())){
-            State.setState(handler.getGame().gamestate);
+            State.setState(new GameState(handler));
             handler.getMouseManager().setUiManager(handler.getMouseManager().getUiManager());
         }
         if(a.contains(handler.getMouseManager().getP1())){
