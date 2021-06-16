@@ -1,5 +1,8 @@
 # Final-Project
-Maze Game
+![](Intro.gif)
+
+Maze Game where a player will face problem in every state and they have to find a way of solving the problem and win.
+
 
 ![](Screenshot%20(113).png)
 ![](Screenshot%20(114).png)
@@ -17,7 +20,7 @@ Maze Game
 --> Press Key_M to view map
 ![](Screenshot%20(132).png)
 --> Press Key_E to view Inventory
-![](res/Screenshot%20(131).png)
+![](Screenshot%20(131).png)
 
 # Third State
 ![](Screenshot%20(125).png)
