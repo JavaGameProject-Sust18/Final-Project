@@ -63,15 +63,21 @@ public class Dimension extends StaticEntity{
                 handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone2);
                 handler.getWorld().getEntityManager().getPlayer().getInventory().addItems(Item.stone3);
                 JOptionPane.showMessageDialog(null,"Winner");
+                i=0;
+                j=0;
                 State.setState(new MenuState(handler));
 
             }
             else if(handler.getWorld().getItemManager().getW()>16){
                 JOptionPane.showMessageDialog(null,"Over Weight");
+                i=0;
+                j=0;
                 State.setState(new MenuState(handler));
             }
             else if(handler.getWorld().getItemManager().getW()<16){
                 JOptionPane.showMessageDialog(null,"Less Weight and profit is not maximized..");
+                i=0;
+                j=0;
                 State.setState(new MenuState(handler));
             }
             i++;
